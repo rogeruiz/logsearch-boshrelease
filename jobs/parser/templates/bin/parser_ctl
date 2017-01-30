@@ -31,6 +31,7 @@ export LOGSTASH_WORKERS=<%= p('logstash_parser.workers') %>
 <% end %>
 export TIMECOP_REJECT_GREATER_THAN_HOURS=<%= p('logstash_parser.timecop.reject_greater_than_hours') %>
 export TIMECOP_REJECT_LESS_THAN_HOURS=<%= p('logstash_parser.timecop.reject_less_than_hours') %>
+export INDEX_STRATEGY=<%= p('logstash_parser.index_strategy') %>
 
 case $1 in
 

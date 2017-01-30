@@ -88,6 +88,9 @@ properties:
   logstash_parser.wait_for_templates:
     description: "A list of index templates that need to be present in ElasticSearch before the process starts"
     default: ["index_template"]
+  logstash_parser.index_strategy:
+    description: Overrides the index strategy for the parser for logsearch-for-cloudfoundry
+    default: per_space
 
   redis.host:
     description: Redis host of queue
